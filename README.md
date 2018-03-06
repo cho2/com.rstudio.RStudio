@@ -7,3 +7,5 @@
 	* `flatpak remote-add --no-gpg-verify rstudio-repo rstudio-repo`
 	* `flatpak install rstudio-repo com.rstudio.RStudio`
 	* `flatpak run com.rstudio.RStudio`
+
+* Updated with [https://github.com/Alexander-Wilms/flathub/tree/rstudio](https://github.com/Alexander-Wilms/flathub/tree/rstudio)
