@@ -1,6 +1,6 @@
 * Based on [https://github.com/rstudio/rstudio/pull/1921/files](https://github.com/rstudio/rstudio/pull/1921/files)
 	* `flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo`
-	* `flatpak install --from https://flathub.org/repo/appstream/io.qt.qtwebkit.BaseApp.flatpakref`
+	* `flatpak install flathub io.qt.qtwebkit.BaseApp`
 	* `flatpak install flathub org.kde.Sdk 5.9`
 	* `flatpak install flathub org.freedesktop.Sdk.Extension.gfortran-62`
 	* `flatpak install flathub org.freedesktop.Sdk.Extension.openjdk9`
