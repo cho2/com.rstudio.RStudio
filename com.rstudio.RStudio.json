@@ -1,9 +1,7 @@
 {
 	"app-id": "com.rstudio.RStudio",
-	"base": "io.qt.qtwebkit.BaseApp",
-	"base-version": "stable",
 	"runtime": "org.kde.Sdk",
-	"runtime-version": "5.9",
+	"runtime-version": "5.10",
 	"sdk": "org.kde.Sdk",
 	"sdk-extensions": [
 		"org.freedesktop.Sdk.Extension.gfortran-62",
@@ -18,7 +16,9 @@
 		"--share=ipc",
 		"--share=network",
 		"--filesystem=home",
-		"--env=PATH=/usr/bin:/app/bin:/usr/lib/sdk/gfortran-62/bin:/usr/lib/sdk/openjdk9/bin"
+		"--env=PATH=/usr/bin:/app/bin:/usr/lib/sdk/gfortran-62/bin:/usr/lib/sdk/openjdk9/bin",
+		"--talk-name=org.gnome.SessionManager",
+		"--device=dri"
 	],
 	"build-options": {
 		"cflags": "-O2",
@@ -86,7 +86,6 @@
 				"-DRSTUDIO_TARGET=Desktop",
 				"-DCMAKE_BUILD_TYPE=Release",
 				"-DCMAKE_INSTALL_PREFIX=/app",
-				"-DQt5WebKitWidgets_DIR=/app/lib/cmake/Qt5WebKitWidgets",
 				"-DQT_QMAKE_EXECUTABLE=/usr/bin/qmake",
 				"-DRSTUDIO_INSTALL_FREEDESKTOP:BOOL=true"
 			],
@@ -172,3 +171,4 @@
 		}
 	]
 }
+
